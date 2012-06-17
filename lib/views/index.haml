@@ -1,11 +1,17 @@
-%form{:method => :post, :action => '/formsubmit'}
+%form{:method => :post, :action => '/formsubmit', :novalidate => true}
   %label
+    .errormessage
+      First Name must be longer than 0 characters.
     First Name
     %input{:name => :firstname}
   %label
+    .errormessage
+      Last Name must be longer than 0 characters.
     Last Name
     %input{:name => :lastname}
   %label
+    .errormessage
+      Valid email required.
     Email
     %input{:name => :email, :type => :email}
   %button{:type => :submit} Submit

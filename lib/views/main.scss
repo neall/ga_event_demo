@@ -60,8 +60,23 @@ ol {
 
 label {
   margin: 5px 0;
+  width: 200px;
 }
 
 label, input, button {
+  display: block;
+}
+
+.errormessage {
+  width: 200px;
+  margin: 0 -212px -50px 0;
+  border: solid 1px red;
+  background: #ddd;
+  padding: 2px 5px;
+  float: right;
+  display: none;
+}
+
+.error .errormessage {
   display: block;
 }
