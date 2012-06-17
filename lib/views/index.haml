@@ -1,1 +1,11 @@
-hello
+%form{:method => :post, :action => '/formsubmit'}
+  %label
+    First Name
+    %input{:name => :firstname}
+  %label
+    Last Name
+    %input{:name => :lastname}
+  %label
+    Email
+    %input{:name => :email, :type => :email}
+  %button{:type => :submit} Submit
